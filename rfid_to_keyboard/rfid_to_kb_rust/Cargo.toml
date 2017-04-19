@@ -1,0 +1,15 @@
+[package]
+name = "rfid_to_kb"
+version = "0.1.0"
+authors = ["baby-bell <baby-bell@users.noreply.github.com>"]
+
+[dependencies]
+nix = "0.7"
+libc = "0.2"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+panic = "abort"
